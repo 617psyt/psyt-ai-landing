@@ -1,50 +1,93 @@
-# React + TypeScript + Vite
+# PSYT.AI Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page for PSYT.AI - an AI-powered psychological insights platform. Built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 **Modern Design**: Clean, professional interface with dark/light mode support
+- 📱 **Responsive**: Optimized for all device sizes
+- 🚀 **Fast**: Built with Vite for optimal performance
+- 📧 **Waitlist Integration**: Connected to Formspree for email collection
+- ♿ **Accessible**: Built with accessibility best practices
+- 🎯 **SEO Optimized**: Structured for search engine visibility
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS with custom components
+- **UI Components**: Radix UI primitives
+- **Form Handling**: Formspree integration
+- **Icons**: Lucide React
+- **Deployment**: Cloudflare Pages
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Prerequisites
+
+- Node.js 18+ 
+- pnpm (recommended) or npm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/617psyt/psyt-ai-landing.git
+cd psyt-ai-landing
+
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Building for Production
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+```bash
+# Build the project
+pnpm build
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+# Preview the build
+pnpm preview
 ```
+
+## Deployment
+
+This project is set up for automated deployment with Cloudflare Pages:
+
+1. Connect your Cloudflare Pages to this GitHub repository
+2. Set build command: `pnpm build`
+3. Set output directory: `dist`
+4. Every push to `main` will trigger a new deployment
+
+## Form Integration
+
+The waitlist signup form is integrated with Formspree:
+- Submissions are sent to `info@psyt.ai`
+- Form includes email validation and error handling
+- Success/error states provide user feedback
+
+## Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── sections/       # Page sections (Hero, Features, etc.)
+│   └── ui/            # Base UI components
+├── hooks/              # Custom React hooks
+├── lib/               # Utility functions
+└── main.tsx           # Application entry point
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+## License
+
+This project is proprietary and confidential.
