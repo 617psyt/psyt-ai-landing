@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { ChevronRight, Users, BookOpen, Home } from 'lucide-react'
 import { MentalClarityIcon } from '../icons/MentalClarityIcon'
-import { SophisticatedNeuralNetwork } from '../icons/NeuralNetworkHeart'
+import { NeuralNetworkHeart } from '../icons/NeuralNetworkHeart'
 
 const Hero = () => {
   const [currentWord, setCurrentWord] = useState(0)
@@ -37,7 +37,7 @@ const Hero = () => {
             {/* Badge */}
             <div className="inline-flex items-center space-x-2 bg-purple-50 dark:bg-purple-900/30 border border-purple-200 dark:border-purple-700/50 rounded-full px-4 py-2">
               {/* Sophisticated Neural Network Icon */}
-              <SophisticatedNeuralNetwork 
+              <NeuralNetworkHeart 
                 className="h-4 w-4 text-purple-600 dark:text-purple-400" 
                 size={16} 
               />

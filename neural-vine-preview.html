@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Network Vine - PSYT.AI</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0F0F23 0%, #1a1a2e 100%);
+            color: white;
+            padding: 40px;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .preview-card {
+            background: rgba(139, 95, 191, 0.1);
+            border: 1px solid rgba(139, 95, 191, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            min-height: 120px;
+            position: relative;
+        }
+        .psyt-text {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+        .psyt-text-small {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+        .psyt-text-tiny {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+        .neural-vine {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .color-purple { color: #8B5FBF; }
+        .color-white { color: white; }
+        .color-blue { color: #4A90E2; }
+        h1 {
+            color: #8B5FBF;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #8B5FBF;
+            font-size: 18px;
+        }
+        .concept-highlight {
+            background: rgba(139, 95, 191, 0.2);
+            border: 2px solid #8B5FBF;
+        }
+        .size-label {
+            font-size: 14px;
+            opacity: 0.7;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌿🧠 Neural Network Vine Concept</h1>
+        <p>Subtle neural networks weaving gracefully around the psyt.ai text</p>
+        
+        <div class="preview-grid">
+            <!-- Main Logo with Vine -->
+            <div class="preview-card concept-highlight">
+                <h2>Main Logo with Neural Vine</h2>
+                <div class="size-label">Delicate tendrils weaving through text</div>
+                <div class="logo-container">
+                    <div class="psyt-text">psyt.ai</div>
+                    <svg class="neural-vine" viewBox="0 0 400 120" fill="none">
+                        <!-- Delicate vine growing around the letters -->
+                        <!-- Starting from 'p' and flowing through -->
+                        <path d="M20,60 Q25,45 35,50 Q45,55 55,45 Q65,35 75,50" 
+                              stroke="#8B5FBF" stroke-width="1" fill="none" opacity="0.6"/>
+                        
+                        <!-- Small nodes along the vine -->
+                        <circle cx="35" cy="50" r="1.5" fill="#8B5FBF" opacity="0.7"/>
+                        <circle cx="55" cy="45" r="1.2" fill="#8B5FBF" opacity="0.6"/>
+                        <circle cx="75" cy="50" r="1.0" fill="#8B5FBF" opacity="0.5"/>
+                        
+                        <!-- Second vine segment through 's', 'y', 't' -->
+                        <path d="M90,65 Q105,40 120,55 Q135,70 150,45 Q165,20 180,40" 
+                              stroke="#8B5FBF" stroke-width="0.8" fill="none" opacity="0.5"/>
+                        
+                        <circle cx="120" cy="55" r="1.1" fill="#8B5FBF" opacity="0.6"/>
+                        <circle cx="150" cy="45" r="0.9" fill="#8B5FBF" opacity="0.5"/>
+                        <circle cx="180" cy="40" r="1.3" fill="#8B5FBF" opacity="0.7"/>
+                        
+                        <!-- Third segment around the dot and 'ai' -->
+                        <path d="M200,55 Q215,75 235,50 Q255,25 275,45 Q295,65 315,40" 
+                              stroke="#8B5FBF" stroke-width="0.7" fill="none" opacity="0.4"/>
+                        
+                        <circle cx="235" cy="50" r="1.0" fill="#8B5FBF" opacity="0.5"/>
+                        <circle cx="275" cy="45" r="1.2" fill="#8B5FBF" opacity="0.6"/>
+                        <circle cx="315" cy="40" r="0.8" fill="#8B5FBF" opacity="0.4"/>
+                        
+                        <!-- Delicate branching tendrils -->
+                        <path d="M35,50 Q30,35 25,40" stroke="#8B5FBF" stroke-width="0.5" fill="none" opacity="0.3"/>
+                        <path d="M120,55 Q115,70 110,65" stroke="#8B5FBF" stroke-width="0.4" fill="none" opacity="0.3"/>
+                        <path d="M275,45 Q280,30 285,35" stroke="#8B5FBF" stroke-width="0.5" fill="none" opacity="0.3"/>
+                        
+                        <!-- Micro nodes on branches -->
+                        <circle cx="25" cy="40" r="0.6" fill="#8B5FBF" opacity="0.4"/>
+                        <circle cx="110" cy="65" r="0.7" fill="#8B5FBF" opacity="0.4"/>
+                        <circle cx="285" cy="35" r="0.5" fill="#8B5FBF" opacity="0.3"/>
+                        
+                        <!-- Subtle connections between main nodes -->
+                        <path d="M35,50 Q75,30 120,55" stroke="#8B5FBF" stroke-width="0.3" fill="none" opacity="0.2"/>
+                        <path d="M150,45 Q200,25 235,50" stroke="#8B5FBF" stroke-width="0.3" fill="none" opacity="0.2"/>
+                    </svg>
+                </div>
+                <p>Grace note neural enhancement</p>
+            </div>
+
+            <!-- Smaller Version -->
+            <div class="preview-card concept-highlight">
+                <h2>Compact Version</h2>
+                <div class="size-label">Favicon/smaller contexts</div>
+                <div class="logo-container">
+                    <div class="psyt-text-small">psyt.ai</div>
+                    <svg class="neural-vine" viewBox="0 0 300 80" fill="none">
+                        <!-- Simplified vine for smaller size -->
+                        <path d="M15,40 Q25,25 40,35 Q55,45 70,30 Q85,15 100,35" 
+                              stroke="#8B5FBF" stroke-width="1.2" fill="none" opacity="0.6"/>
+                        
+                        <circle cx="40" cy="35" r="1.2" fill="#8B5FBF" opacity="0.7"/>
+                        <circle cx="70" cy="30" r="1.0" fill="#8B5FBF" opacity="0.6"/>
+                        <circle cx="100" cy="35" r="1.1" fill="#8B5FBF" opacity="0.7"/>
+                        
+                        <path d="M120,45 Q140,25 160,40 Q180,55 200,30" 
+                              stroke="#8B5FBF" stroke-width="1" fill="none" opacity="0.5"/>
+                        
+                        <circle cx="160" cy="40" r="1.0" fill="#8B5FBF" opacity="0.6"/>
+                        <circle cx="200" cy="30" r="0.9" fill="#8B5FBF" opacity="0.5"/>
+                        
+                        <!-- Single connection -->
+                        <path d="M40,35 Q100,15 160,40" stroke="#8B5FBF" stroke-width="0.4" fill="none" opacity="0.3"/>
+                    </svg>
+                </div>
+                <p>Clean and minimal</p>
+            </div>
+
+            <!-- Header Version -->
+            <div class="preview-card concept-highlight">
+                <h2>Header/Navigation Version</h2>
+                <div class="size-label">Subtle enhancement for headers</div>
+                <div class="logo-container">
+                    <div class="psyt-text-tiny">psyt.ai</div>
+                    <svg class="neural-vine" viewBox="0 0 200 60" fill="none">
+                        <!-- Very subtle vine for header -->
+                        <path d="M10,30 Q20,20 35,28 Q50,36 65,25 Q80,14 95,28" 
+                              stroke="#8B5FBF" stroke-width="0.8" fill="none" opacity="0.4"/>
+                        
+                        <circle cx="35" cy="28" r="0.8" fill="#8B5FBF" opacity="0.5"/>
+                        <circle cx="65" cy="25" r="0.7" fill="#8B5FBF" opacity="0.4"/>
+                        <circle cx="95" cy="28" r="0.8" fill="#8B5FBF" opacity="0.5"/>
+                        
+                        <path d="M110,35 Q125,20 140,30 Q155,40 170,25" 
+                              stroke="#8B5FBF" stroke-width="0.6" fill="none" opacity="0.3"/>
+                        
+                        <circle cx="140" cy="30" r="0.6" fill="#8B5FBF" opacity="0.4"/>
+                        <circle cx="170" cy="25" r="0.5" fill="#8B5FBF" opacity="0.3"/>
+                    </svg>
+                </div>
+                <p>Perfect for navigation</p>
+            </div>
+
+            <!-- Alternative: Growing from dot -->
+            <div class="preview-card">
+                <h2>Alternative: Growing from Dot</h2>
+                <div class="size-label">Vine emerges from the period</div>
+                <div class="logo-container">
+                    <div class="psyt-text-small">psyt.ai</div>
+                    <svg class="neural-vine" viewBox="0 0 300 80" fill="none">
+                        <!-- Vine growing outward from the dot -->
+                        <circle cx="150" cy="60" r="2" fill="#8B5FBF" opacity="0.8"/>
+                        
+                        <!-- Tendrils growing outward -->
+                        <path d="M150,60 Q130,40 110,50 Q90,60 70,45" 
+                              stroke="#8B5FBF" stroke-width="1" fill="none" opacity="0.6"/>
+                        <path d="M150,60 Q170,35 190,45 Q210,55 230,40" 
+                              stroke="#8B5FBF" stroke-width="1" fill="none" opacity="0.6"/>
+                        <path d="M150,60 Q155,25 160,30 Q165,35 170,25" 
+                              stroke="#8B5FBF" stroke-width="0.8" fill="none" opacity="0.5"/>
+                        
+                        <circle cx="110" cy="50" r="1.0" fill="#8B5FBF" opacity="0.6"/>
+                        <circle cx="70" cy="45" r="0.8" fill="#8B5FBF" opacity="0.5"/>
+                        <circle cx="190" cy="45" r="1.1" fill="#8B5FBF" opacity="0.6"/>
+                        <circle cx="230" cy="40" r="0.9" fill="#8B5FBF" opacity="0.5"/>
+                        <circle cx="170" cy="25" r="0.7" fill="#8B5FBF" opacity="0.4"/>
+                    </svg>
+                </div>
+                <p>Neural intelligence blooming</p>
+            </div>
+
+            <!-- White version -->
+            <div class="preview-card">
+                <h2>White Version</h2>
+                <div class="size-label">High contrast variant</div>
+                <div class="logo-container" style="background: #333; border-radius: 8px; padding: 20px;">
+                    <div class="psyt-text-small">psyt.ai</div>
+                    <svg class="neural-vine" viewBox="0 0 300 80" fill="none">
+                        <path d="M15,40 Q25,25 40,35 Q55,45 70,30 Q85,15 100,35" 
+                              stroke="white" stroke-width="1.2" fill="none" opacity="0.6"/>
+                        <circle cx="40" cy="35" r="1.2" fill="white" opacity="0.7"/>
+                        <circle cx="70" cy="30" r="1.0" fill="white" opacity="0.6"/>
+                        <circle cx="100" cy="35" r="1.1" fill="white" opacity="0.7"/>
+                        <path d="M120,45 Q140,25 160,40 Q180,55 200,30" 
+                              stroke="white" stroke-width="1" fill="none" opacity="0.5"/>
+                        <circle cx="160" cy="40" r="1.0" fill="white" opacity="0.6"/>
+                        <circle cx="200" cy="30" r="0.9" fill="white" opacity="0.5"/>
+                    </svg>
+                </div>
+                <p>Clean contrast</p>
+            </div>
+
+            <!-- Blue tech version -->
+            <div class="preview-card">
+                <h2>Blue Tech Version</h2>
+                <div class="size-label">Alternative color scheme</div>
+                <div class="logo-container">
+                    <div class="psyt-text-small">psyt.ai</div>
+                    <svg class="neural-vine" viewBox="0 0 300 80" fill="none">
+                        <path d="M15,40 Q25,25 40,35 Q55,45 70,30 Q85,15 100,35" 
+                              stroke="#4A90E2" stroke-width="1.2" fill="none" opacity="0.6"/>
+                        <circle cx="40" cy="35" r="1.2" fill="#4A90E2" opacity="0.7"/>
+                        <circle cx="70" cy="30" r="1.0" fill="#4A90E2" opacity="0.6"/>
+                        <circle cx="100" cy="35" r="1.1" fill="#4A90E2" opacity="0.7"/>
+                        <path d="M120,45 Q140,25 160,40 Q180,55 200,30" 
+                              stroke="#4A90E2" stroke-width="1" fill="none" opacity="0.5"/>
+                        <circle cx="160" cy="40" r="1.0" fill="#4A90E2" opacity="0.6"/>
+                        <circle cx="200" cy="30" r="0.9" fill="#4A90E2" opacity="0.5"/>
+                    </svg>
+                </div>
+                <p>Tech aesthetic</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; padding: 30px; background: rgba(139, 95, 191, 0.2); border: 2px solid #8B5FBF; border-radius: 12px;">
+            <h2>🌿 Neural Vine Concept</h2>
+            <p><strong>Delicate neural networks as elegant enhancement</strong> - not the main focus, but a graceful accent.</p>
+            <ul style="text-align: left; max-width: 600px; margin: 20px auto;">
+                <li><strong>Subtle Grace Note:</strong> Enhances without overpowering the text</li>
+                <li><strong>Organic Flow:</strong> Vines naturally weave around and through the letters</li>
+                <li><strong>Minimal Nodes:</strong> Small neural points connected by thin pathways</li>
+                <li><strong>Scalable Design:</strong> Works from large logos down to favicons</li>
+                <li><strong>Sophisticated:</strong> Suggests intelligence without being heavy-handed</li>
+                <li><strong>No Ritual Vibes:</strong> Clean, modern, tech-forward aesthetic</li>
+            </ul>
+            <p style="margin-top: 30px;"><em>Perfect balance: the neural network is present but doesn't dominate - just like good AI should enhance human experience!</em></p>
+        </div>
+    </div>
+</body>
+</html>

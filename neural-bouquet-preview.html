@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Bouquet - PSYT.AI</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0F0F23 0%, #1a1a2e 100%);
+            color: white;
+            padding: 40px;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .preview-card {
+            background: rgba(139, 95, 191, 0.1);
+            border: 1px solid rgba(139, 95, 191, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+        }
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            min-height: 120px;
+        }
+        .size-label {
+            font-size: 14px;
+            opacity: 0.7;
+            margin-bottom: 10px;
+        }
+        .color-purple { color: #8B5FBF; }
+        .color-white { color: white; }
+        .color-pink { color: #E91E63; }
+        .color-gradient { 
+            background: linear-gradient(45deg, #8B5FBF, #E91E63);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h1 {
+            color: #8B5FBF;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #8B5FBF;
+            font-size: 18px;
+        }
+        .concept-highlight {
+            background: rgba(139, 95, 191, 0.2);
+            border: 2px solid #8B5FBF;
+        }
+        .neural-pulse {
+            animation: neuralPulse 2s infinite ease-in-out;
+        }
+        @keyframes neuralPulse {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌸🧠 Neural Bouquet</h1>
+        <p>Beautiful flowers with neural network stems - where emotion meets intelligence</p>
+        
+        <div class="preview-grid">
+            <!-- 16px Favicon Size -->
+            <div class="preview-card concept-highlight">
+                <h2>Favicon Size (16px)</h2>
+                <div class="size-label">Browser tab icon</div>
+                <div class="icon-container">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" class="color-purple">
+                        <!-- Simplified bouquet for tiny size -->
+                        <!-- Flower heads -->
+                        <circle cx="8" cy="4" r="2" fill="currentColor" opacity="0.9"/>
+                        <circle cx="12" cy="3" r="2.2" fill="currentColor" opacity="1"/>
+                        <circle cx="16" cy="4" r="2" fill="currentColor" opacity="0.9"/>
+                        
+                        <!-- Neural network stems -->
+                        <g stroke="currentColor" stroke-width="0.8" fill="none" opacity="0.7">
+                            <!-- Left stem -->
+                            <path d="M8,6 Q7,8 6,12 Q5,16 4,20"/>
+                            <circle cx="7" cy="8" r="0.3" fill="currentColor"/>
+                            <circle cx="6" cy="12" r="0.3" fill="currentColor"/>
+                            <circle cx="5" cy="16" r="0.3" fill="currentColor"/>
+                            
+                            <!-- Center stem -->
+                            <path d="M12,5 L12,20"/>
+                            <circle cx="12" cy="8" r="0.3" fill="currentColor"/>
+                            <circle cx="12" cy="12" r="0.3" fill="currentColor"/>
+                            <circle cx="12" cy="16" r="0.3" fill="currentColor"/>
+                            
+                            <!-- Right stem -->
+                            <path d="M16,6 Q17,8 18,12 Q19,16 20,20"/>
+                            <circle cx="17" cy="8" r="0.3" fill="currentColor"/>
+                            <circle cx="18" cy="12" r="0.3" fill="currentColor"/>
+                            <circle cx="19" cy="16" r="0.3" fill="currentColor"/>
+                        </g>
+                    </svg>
+                </div>
+                <p>Clean bouquet silhouette</p>
+            </div>
+
+            <!-- 24px Small Icon -->
+            <div class="preview-card concept-highlight">
+                <h2>Small Icon (24px)</h2>
+                <div class="size-label">Navigation/toolbar</div>
+                <div class="icon-container">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="color-purple">
+                        <!-- Flower heads with petals -->
+                        <g>
+                            <!-- Left flower -->
+                            <circle cx="7" cy="4" r="1.5" fill="currentColor" opacity="0.9"/>
+                            <circle cx="6" cy="4.5" r="0.8" fill="currentColor" opacity="0.7"/>
+                            <circle cx="8" cy="4.5" r="0.8" fill="currentColor" opacity="0.7"/>
+                            
+                            <!-- Center flower (largest) -->
+                            <circle cx="12" cy="3" r="2" fill="currentColor" opacity="1"/>
+                            <circle cx="11" cy="3.5" r="1" fill="currentColor" opacity="0.8"/>
+                            <circle cx="13" cy="3.5" r="1" fill="currentColor" opacity="0.8"/>
+                            <circle cx="12" cy="4.5" r="1" fill="currentColor" opacity="0.8"/>
+                            
+                            <!-- Right flower -->
+                            <circle cx="17" cy="4" r="1.5" fill="currentColor" opacity="0.9"/>
+                            <circle cx="16" cy="4.5" r="0.8" fill="currentColor" opacity="0.7"/>
+                            <circle cx="18" cy="4.5" r="0.8" fill="currentColor" opacity="0.7"/>
+                        </g>
+                        
+                        <!-- Neural network stems -->
+                        <g stroke="currentColor" stroke-width="1" fill="none" opacity="0.8">
+                            <!-- Left neural stem -->
+                            <path d="M7,5.5 Q6,8 5,12 Q4,16 3,20"/>
+                            <circle cx="6.5" cy="7" r="0.4" fill="currentColor"/>
+                            <circle cx="5.5" cy="10" r="0.4" fill="currentColor"/>
+                            <circle cx="4.5" cy="14" r="0.4" fill="currentColor"/>
+                            <circle cx="3.5" cy="18" r="0.4" fill="currentColor"/>
+                            
+                            <!-- Center neural stem -->
+                            <path d="M12,5 L12,21"/>
+                            <circle cx="12" cy="8" r="0.5" fill="currentColor"/>
+                            <circle cx="12" cy="12" r="0.5" fill="currentColor"/>
+                            <circle cx="12" cy="16" r="0.5" fill="currentColor"/>
+                            <circle cx="12" cy="19" r="0.4" fill="currentColor"/>
+                            
+                            <!-- Right neural stem -->
+                            <path d="M17,5.5 Q18,8 19,12 Q20,16 21,20"/>
+                            <circle cx="17.5" cy="7" r="0.4" fill="currentColor"/>
+                            <circle cx="18.5" cy="10" r="0.4" fill="currentColor"/>
+                            <circle cx="19.5" cy="14" r="0.4" fill="currentColor"/>
+                            <circle cx="20.5" cy="18" r="0.4" fill="currentColor"/>
+                        </g>
+                        
+                        <!-- Neural connections between stems -->
+                        <g stroke="currentColor" stroke-width="0.5" opacity="0.4">
+                            <path d="M6.5,7 L12,8"/>
+                            <path d="M12,8 L17.5,7"/>
+                            <path d="M5.5,10 L12,12"/>
+                            <path d="M12,12 L18.5,10"/>
+                        </g>
+                    </svg>
+                </div>
+                <p>Neural connections visible</p>
+            </div>
+
+            <!-- 32px Standard Icon -->
+            <div class="preview-card concept-highlight">
+                <h2>Standard Icon (32px)</h2>
+                <div class="size-label">Main logo usage</div>
+                <div class="icon-container">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="color-purple">
+                        <!-- Detailed flower heads -->
+                        <g>
+                            <!-- Left flower cluster -->
+                            <circle cx="6" cy="3.5" r="1.8" fill="currentColor" opacity="0.9"/>
+                            <circle cx="5" cy="4" r="1" fill="currentColor" opacity="0.7"/>
+                            <circle cx="7" cy="4" r="1" fill="currentColor" opacity="0.7"/>
+                            <circle cx="6" cy="5" r="0.8" fill="currentColor" opacity="0.6"/>
+                            
+                            <!-- Center flower (hero) -->
+                            <circle cx="12" cy="2.5" r="2.2" fill="currentColor" opacity="1"/>
+                            <circle cx="10.5" cy="3" r="1.2" fill="currentColor" opacity="0.8"/>
+                            <circle cx="13.5" cy="3" r="1.2" fill="currentColor" opacity="0.8"/>
+                            <circle cx="12" cy="4.2" r="1.2" fill="currentColor" opacity="0.8"/>
+                            <circle cx="11" cy="4.5" r="0.8" fill="currentColor" opacity="0.6"/>
+                            <circle cx="13" cy="4.5" r="0.8" fill="currentColor" opacity="0.6"/>
+                            
+                            <!-- Right flower cluster -->
+                            <circle cx="18" cy="3.5" r="1.8" fill="currentColor" opacity="0.9"/>
+                            <circle cx="17" cy="4" r="1" fill="currentColor" opacity="0.7"/>
+                            <circle cx="19" cy="4" r="1" fill="currentColor" opacity="0.7"/>
+                            <circle cx="18" cy="5" r="0.8" fill="currentColor" opacity="0.6"/>
+                            
+                            <!-- Small accent flowers -->
+                            <circle cx="9" cy="4.5" r="0.8" fill="currentColor" opacity="0.5"/>
+                            <circle cx="15" cy="4.5" r="0.8" fill="currentColor" opacity="0.5"/>
+                        </g>
+                        
+                        <!-- Complex neural network stems -->
+                        <g stroke="currentColor" stroke-width="1.2" fill="none" opacity="0.8">
+                            <!-- Left neural stem with branches -->
+                            <path d="M6,5.5 Q5,8 4,12 Q3,16 2,21"/>
+                            <path d="M6,7 Q7,9 6,11"/>
+                            <circle cx="5.5" cy="7" r="0.5" fill="currentColor"/>
+                            <circle cx="4.5" cy="10" r="0.5" fill="currentColor"/>
+                            <circle cx="3.5" cy="14" r="0.5" fill="currentColor"/>
+                            <circle cx="2.5" cy="18" r="0.5" fill="currentColor"/>
+                            <circle cx="6.5" cy="9" r="0.3" fill="currentColor"/>
+                            
+                            <!-- Center neural stem (main) -->
+                            <path d="M12,4.7 L12,21"/>
+                            <path d="M12,8 Q10,10 12,12"/>
+                            <path d="M12,8 Q14,10 12,12"/>
+                            <circle cx="12" cy="7" r="0.6" fill="currentColor"/>
+                            <circle cx="12" cy="11" r="0.6" fill="currentColor"/>
+                            <circle cx="12" cy="15" r="0.6" fill="currentColor"/>
+                            <circle cx="12" cy="19" r="0.5" fill="currentColor"/>
+                            <circle cx="10.5" cy="9" r="0.3" fill="currentColor"/>
+                            <circle cx="13.5" cy="9" r="0.3" fill="currentColor"/>
+                            
+                            <!-- Right neural stem with branches -->
+                            <path d="M18,5.5 Q19,8 20,12 Q21,16 22,21"/>
+                            <path d="M18,7 Q17,9 18,11"/>
+                            <circle cx="18.5" cy="7" r="0.5" fill="currentColor"/>
+                            <circle cx="19.5" cy="10" r="0.5" fill="currentColor"/>
+                            <circle cx="20.5" cy="14" r="0.5" fill="currentColor"/>
+                            <circle cx="21.5" cy="18" r="0.5" fill="currentColor"/>
+                            <circle cx="17.5" cy="9" r="0.3" fill="currentColor"/>
+                        </g>
+                        
+                        <!-- Cross-connections -->
+                        <g stroke="currentColor" stroke-width="0.8" opacity="0.5">
+                            <path d="M5.5,7 L12,7"/>
+                            <path d="M12,7 L18.5,7"/>
+                            <path d="M4.5,10 L12,11"/>
+                            <path d="M12,11 L19.5,10"/>
+                            <path d="M3.5,14 L12,15"/>
+                            <path d="M12,15 L20.5,14"/>
+                        </g>
+                    </svg>
+                </div>
+                <p>Full neural bouquet detail</p>
+            </div>
+
+            <!-- 48px Large Animated -->
+            <div class="preview-card concept-highlight">
+                <h2>Large Animated (48px)</h2>
+                <div class="size-label">Hero/landing page</div>
+                <div class="icon-container">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" class="color-purple">
+                        <!-- Animated flower heads -->
+                        <g>
+                            <!-- Left flower with subtle animation -->
+                            <circle cx="6" cy="3.5" r="1.8" fill="currentColor" opacity="0.9">
+                                <animate attributeName="r" values="1.6;1.8;1.6" dur="4s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="5" cy="4" r="1" fill="currentColor" opacity="0.7"/>
+                            <circle cx="7" cy="4" r="1" fill="currentColor" opacity="0.7"/>
+                            
+                            <!-- Center hero flower -->
+                            <circle cx="12" cy="2.5" r="2.2" fill="currentColor" opacity="1">
+                                <animate attributeName="r" values="2;2.2;2" dur="3s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="10.5" cy="3" r="1.2" fill="currentColor" opacity="0.8"/>
+                            <circle cx="13.5" cy="3" r="1.2" fill="currentColor" opacity="0.8"/>
+                            <circle cx="12" cy="4.2" r="1.2" fill="currentColor" opacity="0.8"/>
+                            
+                            <!-- Right flower -->
+                            <circle cx="18" cy="3.5" r="1.8" fill="currentColor" opacity="0.9">
+                                <animate attributeName="r" values="1.6;1.8;1.6" dur="4.5s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="17" cy="4" r="1" fill="currentColor" opacity="0.7"/>
+                            <circle cx="19" cy="4" r="1" fill="currentColor" opacity="0.7"/>
+                        </g>
+                        
+                        <!-- Neural stems with pulsing activity -->
+                        <g stroke="currentColor" stroke-width="1.2" fill="none" opacity="0.8">
+                            <!-- Left neural stem -->
+                            <path d="M6,5.5 Q5,8 4,12 Q3,16 2,21"/>
+                            <circle cx="5.5" cy="7" r="0.5" fill="currentColor" class="neural-pulse"/>
+                            <circle cx="4.5" cy="10" r="0.5" fill="currentColor" class="neural-pulse" style="animation-delay: 0.5s"/>
+                            <circle cx="3.5" cy="14" r="0.5" fill="currentColor" class="neural-pulse" style="animation-delay: 1s"/>
+                            <circle cx="2.5" cy="18" r="0.5" fill="currentColor" class="neural-pulse" style="animation-delay: 1.5s"/>
+                            
+                            <!-- Center neural stem -->
+                            <path d="M12,4.7 L12,21"/>
+                            <circle cx="12" cy="7" r="0.6" fill="currentColor" class="neural-pulse" style="animation-delay: 0.2s"/>
+                            <circle cx="12" cy="11" r="0.6" fill="currentColor" class="neural-pulse" style="animation-delay: 0.7s"/>
+                            <circle cx="12" cy="15" r="0.6" fill="currentColor" class="neural-pulse" style="animation-delay: 1.2s"/>
+                            <circle cx="12" cy="19" r="0.5" fill="currentColor" class="neural-pulse" style="animation-delay: 1.7s"/>
+                            
+                            <!-- Right neural stem -->
+                            <path d="M18,5.5 Q19,8 20,12 Q21,16 22,21"/>
+                            <circle cx="18.5" cy="7" r="0.5" fill="currentColor" class="neural-pulse" style="animation-delay: 0.3s"/>
+                            <circle cx="19.5" cy="10" r="0.5" fill="currentColor" class="neural-pulse" style="animation-delay: 0.8s"/>
+                            <circle cx="20.5" cy="14" r="0.5" fill="currentColor" class="neural-pulse" style="animation-delay: 1.3s"/>
+                            <circle cx="21.5" cy="18" r="0.5" fill="currentColor" class="neural-pulse" style="animation-delay: 1.8s"/>
+                        </g>
+                        
+                        <!-- Animated connections -->
+                        <g stroke="currentColor" stroke-width="0.8" opacity="0.5">
+                            <path d="M5.5,7 L12,7" stroke-dasharray="2,2">
+                                <animate attributeName="stroke-dashoffset" values="0;4" dur="2s" repeatCount="indefinite"/>
+                            </path>
+                            <path d="M12,7 L18.5,7" stroke-dasharray="2,2">
+                                <animate attributeName="stroke-dashoffset" values="0;-4" dur="2s" repeatCount="indefinite"/>
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <p>Neural activity flowing through stems</p>
+            </div>
+
+            <!-- Gradient Version -->
+            <div class="preview-card">
+                <h2>Gradient Bouquet</h2>
+                <div class="size-label">Premium aesthetic</div>
+                <div class="icon-container">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                        <defs>
+                            <linearGradient id="flowerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#8B5FBF;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#E91E63;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="stemGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#8B5FBF;stop-opacity:0.8" />
+                                <stop offset="100%" style="stop-color:#4A90E2;stop-opacity:0.6" />
+                            </linearGradient>
+                        </defs>
+                        
+                        <!-- Gradient flowers -->
+                        <circle cx="6" cy="3.5" r="1.8" fill="url(#flowerGradient)" opacity="0.9"/>
+                        <circle cx="12" cy="2.5" r="2.2" fill="url(#flowerGradient)" opacity="1"/>
+                        <circle cx="18" cy="3.5" r="1.8" fill="url(#flowerGradient)" opacity="0.9"/>
+                        
+                        <!-- Gradient neural stems -->
+                        <g stroke="url(#stemGradient)" stroke-width="1.2" fill="none">
+                            <path d="M6,5.5 Q5,8 4,12 Q3,16 2,21"/>
+                            <path d="M12,4.7 L12,21"/>
+                            <path d="M18,5.5 Q19,8 20,12 Q21,16 22,21"/>
+                        </g>
+                        
+                        <!-- Gradient neural nodes -->
+                        <circle cx="5.5" cy="7" r="0.5" fill="url(#stemGradient)"/>
+                        <circle cx="12" cy="7" r="0.6" fill="url(#stemGradient)"/>
+                        <circle cx="18.5" cy="7" r="0.5" fill="url(#stemGradient)"/>
+                        <circle cx="12" cy="11" r="0.6" fill="url(#stemGradient)"/>
+                        <circle cx="12" cy="15" r="0.6" fill="url(#stemGradient)"/>
+                    </svg>
+                </div>
+                <p>Elegant gradient flow</p>
+            </div>
+
+            <!-- Minimalist Version -->
+            <div class="preview-card">
+                <h2>Minimalist</h2>
+                <div class="size-label">Clean & simple</div>
+                <div class="icon-container">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="color-purple">
+                        <!-- Simple flower heads -->
+                        <circle cx="8" cy="4" r="2" fill="currentColor" opacity="0.9"/>
+                        <circle cx="12" cy="3" r="2.5" fill="currentColor" opacity="1"/>
+                        <circle cx="16" cy="4" r="2" fill="currentColor" opacity="0.9"/>
+                        
+                        <!-- Clean neural stems -->
+                        <g stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.7">
+                            <path d="M8,6 L6,20"/>
+                            <path d="M12,5.5 L12,20"/>
+                            <path d="M16,6 L18,20"/>
+                        </g>
+                        
+                        <!-- Minimal neural nodes -->
+                        <circle cx="7" cy="10" r="0.4" fill="currentColor"/>
+                        <circle cx="12" cy="9" r="0.5" fill="currentColor"/>
+                        <circle cx="17" cy="10" r="0.4" fill="currentColor"/>
+                        <circle cx="12" cy="14" r="0.5" fill="currentColor"/>
+                    </svg>
+                </div>
+                <p>Clean professional look</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; padding: 30px; background: rgba(139, 95, 191, 0.2); border: 2px solid #8B5FBF; border-radius: 12px;">
+            <h2>🌸🧠 Neural Bouquet Concept</h2>
+            <p><strong>Beautiful flowers with neural network stems</strong> - where emotion meets intelligence in perfect harmony.</p>
+            <ul style="text-align: left; max-width: 600px; margin: 20px auto;">
+                <li><strong>Beautiful Metaphor:</strong> Flowers represent growth, beauty, and emotional connection</li>
+                <li><strong>Neural Stems:</strong> Each stem is a neural network showing AI intelligence flowing upward</li>
+                <li><strong>Organic Tech:</strong> Perfect blend of nature and technology</li>
+                <li><strong>Scalable Design:</strong> Works from favicon to hero logo</li>
+                <li><strong>Brand Story:</strong> AI intelligence nurturing human emotion and growth</li>
+                <li><strong>Unique Identity:</strong> Distinctive and memorable - no one else has this!</li>
+            </ul>
+            <p style="margin-top: 30px;"><em>A bouquet of possibilities - where artificial intelligence blooms into human connection! 🌸✨</em></p>
+        </div>
+    </div>
+</body>
+</html>

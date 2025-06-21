@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Network Heart Icon Preview</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0F0F23 0%, #1a1a2e 100%);
+            color: white;
+            padding: 40px;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .preview-card {
+            background: rgba(139, 95, 191, 0.1);
+            border: 1px solid rgba(139, 95, 191, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+        }
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            min-height: 100px;
+        }
+        .size-label {
+            font-size: 14px;
+            opacity: 0.7;
+            margin-bottom: 10px;
+        }
+        .color-purple { color: #8B5FBF; }
+        .color-white { color: white; }
+        .color-blue { color: #4A90E2; }
+        h1 {
+            color: #8B5FBF;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #8B5FBF;
+            font-size: 18px;
+        }
+        .current-icon {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠💜 Neural Network Heart Icon Preview</h1>
+        <p>Compare your current icon with the new neural network heart design</p>
+        
+        <div class="preview-grid">
+            <!-- Current Icon -->
+            <div class="preview-card current-icon">
+                <h2>Current Icon (Star/Sparkle)</h2>
+                <div class="size-label">32px size</div>
+                <div class="icon-container">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L13.09 8.26L19 7L14.74 11.26L21 12L14.74 12.74L19 17L13.09 15.74L12 22L10.91 15.74L5 17L9.26 12.74L3 12L9.26 11.26L5 7L10.91 8.26L12 2Z" fill="#8B5FBF"/>
+                    </svg>
+                </div>
+                <p>Simple geometric design</p>
+            </div>
+
+            <!-- New Neural Heart - Small -->
+            <div class="preview-card">
+                <h2>Neural Network Heart</h2>
+                <div class="size-label">16px size (favicon)</div>
+                <div class="icon-container">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" class="color-purple">
+                        <!-- Heart shape outline -->
+                        <path d="M12,21.35l-1.45-1.32C5.4,15.36,2,12.28,2,8.5 C2,5.42,4.42,3,7.5,3c1.74,0,3.41,0.81,4.5,2.09C13.09,3.81,14.76,3,16.5,3 C19.58,3,22,5.42,22,8.5c0,3.78-3.4,6.86-8.55,11.54L12,21.35z" stroke="currentColor" stroke-width="0.5" fill="none" opacity="0.3"/>
+                        <!-- Central node -->
+                        <circle cx="12" cy="12" r="1.2" fill="currentColor" opacity="0.9"/>
+                        <!-- Upper chambers -->
+                        <circle cx="9" cy="8" r="0.9" fill="currentColor" opacity="0.8"/>
+                        <circle cx="15" cy="8" r="0.9" fill="currentColor" opacity="0.8"/>
+                        <!-- Side nodes -->
+                        <circle cx="7" cy="11" r="0.8" fill="currentColor" opacity="0.7"/>
+                        <circle cx="17" cy="11" r="0.8" fill="currentColor" opacity="0.7"/>
+                        <!-- Lower nodes -->
+                        <circle cx="10" cy="15" r="0.7" fill="currentColor" opacity="0.6"/>
+                        <circle cx="14" cy="15" r="0.7" fill="currentColor" opacity="0.6"/>
+                        <circle cx="12" cy="17" r="0.6" fill="currentColor" opacity="0.6"/>
+                        <!-- Connections -->
+                        <line x1="12" y1="12" x2="9" y2="8" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+                        <line x1="12" y1="12" x2="15" y2="8" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+                        <line x1="12" y1="12" x2="7" y2="11" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                        <line x1="12" y1="12" x2="17" y2="11" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                    </svg>
+                </div>
+                <p>Perfect for browser tab</p>
+            </div>
+
+            <!-- New Neural Heart - Medium -->
+            <div class="preview-card">
+                <h2>Neural Network Heart</h2>
+                <div class="size-label">32px size (standard)</div>
+                <div class="icon-container">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="color-purple">
+                        <!-- Heart shape outline -->
+                        <path d="M12,21.35l-1.45-1.32C5.4,15.36,2,12.28,2,8.5 C2,5.42,4.42,3,7.5,3c1.74,0,3.41,0.81,4.5,2.09C13.09,3.81,14.76,3,16.5,3 C19.58,3,22,5.42,22,8.5c0,3.78-3.4,6.86-8.55,11.54L12,21.35z" stroke="currentColor" stroke-width="0.5" fill="none" opacity="0.3"/>
+                        <!-- Central node -->
+                        <circle cx="12" cy="12" r="1.2" fill="currentColor" opacity="0.9"/>
+                        <!-- Upper chambers -->
+                        <circle cx="9" cy="8" r="0.9" fill="currentColor" opacity="0.8"/>
+                        <circle cx="15" cy="8" r="0.9" fill="currentColor" opacity="0.8"/>
+                        <!-- Side nodes -->
+                        <circle cx="7" cy="11" r="0.8" fill="currentColor" opacity="0.7"/>
+                        <circle cx="17" cy="11" r="0.8" fill="currentColor" opacity="0.7"/>
+                        <!-- Lower nodes -->
+                        <circle cx="10" cy="15" r="0.7" fill="currentColor" opacity="0.6"/>
+                        <circle cx="14" cy="15" r="0.7" fill="currentColor" opacity="0.6"/>
+                        <circle cx="12" cy="17" r="0.6" fill="currentColor" opacity="0.6"/>
+                        <!-- All connections -->
+                        <line x1="12" y1="12" x2="9" y2="8" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+                        <line x1="12" y1="12" x2="15" y2="8" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+                        <line x1="12" y1="12" x2="7" y2="11" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                        <line x1="12" y1="12" x2="17" y2="11" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                        <line x1="12" y1="12" x2="10" y2="15" stroke="currentColor" stroke-width="0.6" opacity="0.4"/>
+                        <line x1="12" y1="12" x2="14" y2="15" stroke="currentColor" stroke-width="0.6" opacity="0.4"/>
+                        <line x1="12" y1="12" x2="12" y2="17" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
+                    </svg>
+                </div>
+                <p>Clear neural structure</p>
+            </div>
+
+            <!-- New Neural Heart - Large -->
+            <div class="preview-card">
+                <h2>Neural Network Heart</h2>
+                <div class="size-label">64px size (detailed)</div>
+                <div class="icon-container">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" class="color-purple">
+                        <!-- Heart shape outline -->
+                        <path d="M12,21.35l-1.45-1.32C5.4,15.36,2,12.28,2,8.5 C2,5.42,4.42,3,7.5,3c1.74,0,3.41,0.81,4.5,2.09C13.09,3.81,14.76,3,16.5,3 C19.58,3,22,5.42,22,8.5c0,3.78-3.4,6.86-8.55,11.54L12,21.35z" stroke="currentColor" stroke-width="0.5" fill="none" opacity="0.3"/>
+                        <!-- Central processing node -->
+                        <circle cx="12" cy="12" r="1.2" fill="currentColor" opacity="0.9"/>
+                        <!-- Upper chambers -->
+                        <circle cx="9" cy="8" r="0.9" fill="currentColor" opacity="0.8"/>
+                        <circle cx="15" cy="8" r="0.9" fill="currentColor" opacity="0.8"/>
+                        <!-- Side nodes -->
+                        <circle cx="7" cy="11" r="0.8" fill="currentColor" opacity="0.7"/>
+                        <circle cx="17" cy="11" r="0.8" fill="currentColor" opacity="0.7"/>
+                        <!-- Lower nodes -->
+                        <circle cx="10" cy="15" r="0.7" fill="currentColor" opacity="0.6"/>
+                        <circle cx="14" cy="15" r="0.7" fill="currentColor" opacity="0.6"/>
+                        <circle cx="12" cy="17" r="0.6" fill="currentColor" opacity="0.6"/>
+                        <!-- Peripheral nodes -->
+                        <circle cx="8.5" cy="6" r="0.5" fill="currentColor" opacity="0.5"/>
+                        <circle cx="15.5" cy="6" r="0.5" fill="currentColor" opacity="0.5"/>
+                        <!-- All neural connections -->
+                        <line x1="12" y1="12" x2="9" y2="8" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+                        <line x1="12" y1="12" x2="15" y2="8" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+                        <line x1="12" y1="12" x2="7" y2="11" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                        <line x1="12" y1="12" x2="17" y2="11" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                        <line x1="12" y1="12" x2="10" y2="15" stroke="currentColor" stroke-width="0.6" opacity="0.4"/>
+                        <line x1="12" y1="12" x2="14" y2="15" stroke="currentColor" stroke-width="0.6" opacity="0.4"/>
+                        <line x1="12" y1="12" x2="12" y2="17" stroke="currentColor" stroke-width="0.5" opacity="0.4"/>
+                        <!-- Curved pathways -->
+                        <path d="M9,8 Q6,10 7,11" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+                        <path d="M15,8 Q18,10 17,11" stroke="currentColor" stroke-width="0.4" fill="none" opacity="0.3"/>
+                    </svg>
+                </div>
+                <p>Full neural detail visible</p>
+            </div>
+
+            <!-- Color Variations -->
+            <div class="preview-card">
+                <h2>White Version</h2>
+                <div class="size-label">32px - for dark backgrounds</div>
+                <div class="icon-container" style="background: #333; border-radius: 8px; padding: 20px;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="color-white">
+                        <path d="M12,21.35l-1.45-1.32C5.4,15.36,2,12.28,2,8.5 C2,5.42,4.42,3,7.5,3c1.74,0,3.41,0.81,4.5,2.09C13.09,3.81,14.76,3,16.5,3 C19.58,3,22,5.42,22,8.5c0,3.78-3.4,6.86-8.55,11.54L12,21.35z" stroke="currentColor" stroke-width="0.5" fill="none" opacity="0.3"/>
+                        <circle cx="12" cy="12" r="1.2" fill="currentColor" opacity="0.9"/>
+                        <circle cx="9" cy="8" r="0.9" fill="currentColor" opacity="0.8"/>
+                        <circle cx="15" cy="8" r="0.9" fill="currentColor" opacity="0.8"/>
+                        <circle cx="7" cy="11" r="0.8" fill="currentColor" opacity="0.7"/>
+                        <circle cx="17" cy="11" r="0.8" fill="currentColor" opacity="0.7"/>
+                        <line x1="12" y1="12" x2="9" y2="8" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+                        <line x1="12" y1="12" x2="15" y2="8" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+                        <line x1="12" y1="12" x2="7" y2="11" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                        <line x1="12" y1="12" x2="17" y2="11" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                    </svg>
+                </div>
+                <p>High contrast version</p>
+            </div>
+
+            <div class="preview-card">
+                <h2>Blue Version</h2>
+                <div class="size-label">32px - alternative color</div>
+                <div class="icon-container">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="color-blue">
+                        <path d="M12,21.35l-1.45-1.32C5.4,15.36,2,12.28,2,8.5 C2,5.42,4.42,3,7.5,3c1.74,0,3.41,0.81,4.5,2.09C13.09,3.81,14.76,3,16.5,3 C19.58,3,22,5.42,22,8.5c0,3.78-3.4,6.86-8.55,11.54L12,21.35z" stroke="currentColor" stroke-width="0.5" fill="none" opacity="0.3"/>
+                        <circle cx="12" cy="12" r="1.2" fill="currentColor" opacity="0.9"/>
+                        <circle cx="9" cy="8" r="0.9" fill="currentColor" opacity="0.8"/>
+                        <circle cx="15" cy="8" r="0.9" fill="currentColor" opacity="0.8"/>
+                        <circle cx="7" cy="11" r="0.8" fill="currentColor" opacity="0.7"/>
+                        <circle cx="17" cy="11" r="0.8" fill="currentColor" opacity="0.7"/>
+                        <line x1="12" y1="12" x2="9" y2="8" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+                        <line x1="12" y1="12" x2="15" y2="8" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+                        <line x1="12" y1="12" x2="7" y2="11" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                        <line x1="12" y1="12" x2="17" y2="11" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                    </svg>
+                </div>
+                <p>Tech-focused variant</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; padding: 30px; background: rgba(139, 95, 191, 0.1); border-radius: 12px;">
+            <h2>🧠 Design Concept</h2>
+            <p><strong>Neural Network Heart</strong> combines the emotional connection of a heart shape with the intelligence symbolism of a neural network.</p>
+            <ul style="text-align: left; max-width: 600px; margin: 20px auto;">
+                <li><strong>Heart Shape:</strong> Represents emotional intelligence and human connection</li>
+                <li><strong>Neural Nodes:</strong> Show AI processing and psychological insights</li>
+                <li><strong>Connections:</strong> Illustrate the network of mental wellness pathways</li>
+                <li><strong>Purple Color:</strong> Matches your brand and suggests wisdom/intuition</li>
+            </ul>
+            <p style="margin-top: 30px;"><em>Perfect for a mental wellness AI platform!</em></p>
+        </div>
+    </div>
+</body>
+</html>
