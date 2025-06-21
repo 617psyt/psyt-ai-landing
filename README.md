@@ -68,6 +68,22 @@ The waitlist signup form is integrated with Formspree:
 - Form includes email validation and error handling
 - Success/error states provide user feedback
 
+## Beta Survey Automation
+
+Automatic Google Workspace integration for beta candidate screening:
+- **Auto-sends** thoughtful 10-question survey to new signups
+- **Qualitative scoring** to identify ideal beta candidates (0-10 points)
+- **Team notifications** for high-value candidates (7+ points)
+- **Google Sheets tracking** for easy management
+
+### Setup Required:
+1. Google Form with survey questions
+2. Google Apps Script for automation
+3. Gmail filters for Formspree monitoring
+4. Google Sheet for candidate tracking
+
+📁 **Full setup guide:** `/google-workspace-automation/SETUP-GUIDE.md`
+
 ## Project Structure
 
 ```
